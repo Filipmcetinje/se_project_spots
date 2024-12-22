@@ -1,0 +1,24 @@
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.header__logo {
+  width: 94px;
+  height: 26px;
+}
+
+/* max width example */
+/* @media screen and (max-width: 880px) {
+  .header {
+      padding: 0;
+  }
+} */
+
+/* max width example */
+/* @media screen and (min-width: 330px) {
+  .header {
+      padding: 10;
+  }
+} */
