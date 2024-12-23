@@ -1,7 +1,6 @@
 .footer {
-  width: 104px;
   margin: 60px auto;
 }
 .footer__copyright {
-  margin: 0;
+  text-align: center;
 }

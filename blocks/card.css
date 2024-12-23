@@ -27,4 +27,16 @@
   line-height: 24px;
   font-weight: 500;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media screen and (max-width: 650px) {
+  .card__image {
+    height: 288px;
+    width: 288px;
+  }
+  .card__content {
+    width: 288px;
+  }
 }
