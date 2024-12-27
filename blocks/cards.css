@@ -6,15 +6,26 @@
 .cards__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 413px);
+  grid-template-columns: repeat(3, 413px);
   justify-content: center;
   gap: 40px 20px;
+  max-width: 800px;
 }
-@media screen and (max-width: 627px) {
+
+@media screen and (max-width: 1320px) {
   .cards__list {
-    grid-template-columns: repeat(auto-fit, 288px);
+    grid-template-columns: repeat(2, 413px);
+    justify-content: center;
+    gap: 40px 20px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .cards__list {
+    grid-template-columns: repeat(1, 288px);
     gap: 20px;
   }
 }

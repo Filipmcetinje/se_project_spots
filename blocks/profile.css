@@ -11,6 +11,12 @@
   height: 52px;
   border-radius: 8px;
   align-self: flex-end;
+  line-height: 16px;
+  font-weight: 500;
+  border: none;
+}
+.profile__add-button:hover {
+  background-color: rgba(33, 33, 33, 0.8);
 }
 .profile__plus-icon {
   position: relative;
@@ -33,6 +39,9 @@
   height: 16px;
   align-self: flex-start;
 }
+.profile__edit-button:hover {
+  opacity: 100%;
+}
 .profile__edit-icon {
   position: relative;
   top: 3px;
@@ -47,6 +56,7 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
 }
@@ -56,11 +66,12 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
 }
 
-@media screen and (max-width: 627px) {
+@media screen and (max-width: 880px) {
   .profile {
     flex-direction: column;
     max-width: 288px;
