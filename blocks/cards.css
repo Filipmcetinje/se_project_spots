@@ -15,6 +15,9 @@
 }
 
 @media screen and (max-width: 1320px) {
+  .cards {
+    padding-bottom: 20px;
+  }
   .cards__list {
     grid-template-columns: repeat(2, 413px);
     gap: 20px;
@@ -25,6 +28,5 @@
 @media screen and (max-width: 880px) {
   .cards__list {
     grid-template-columns: repeat(1, 288px);
-    gap: 20px;
   }
 }
