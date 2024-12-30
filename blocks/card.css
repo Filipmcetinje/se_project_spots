@@ -18,6 +18,7 @@
   opacity: 40%;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .card__like-button:hover {
   opacity: 100%;

@@ -19,6 +19,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 .profile__add-button:hover {
   background-color: rgba(33, 33, 33, 0.8);
@@ -47,6 +48,7 @@
   align-items: center;
   gap: 8px;
   padding: 0;
+  cursor: pointer;
 }
 .profile__edit-button:hover {
   opacity: 100%;

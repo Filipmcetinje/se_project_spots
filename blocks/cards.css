@@ -2,6 +2,8 @@
   padding-top: 20px;
   padding-bottom: 40px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .cards__list {
   list-style-type: none;
