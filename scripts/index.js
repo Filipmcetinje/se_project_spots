@@ -1,7 +1,7 @@
 const initialCards = [
   {
     name: "Val Thorens",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg",
+    link: "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fcute-dog&psig=AOvVaw3ZNE-JXNQdlTW-eTd2powG&ust=1736647490248000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCvoZnK7IoDFQAAAAAdAAAAABAE",
   },
   {
     name: "Restaurant terrace",
