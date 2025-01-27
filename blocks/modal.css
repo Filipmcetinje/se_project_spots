@@ -35,6 +35,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  opacity: 40%;
+}
+.modal__close-button:hover {
+  opacity: 100%;
 }
 
 .modal__title {
@@ -58,6 +63,10 @@
   padding: 16px 12px;
   border-radius: 8px;
   border: 1px solid rgba(33, 33, 33, 0.4);
+  cursor: pointer;
+}
+.modal__input:hover {
+  border: 1px solid rgba(33, 33, 33, 1);
 }
 .modal__submit-button {
   width: 156px;
@@ -66,6 +75,7 @@
   color: rgba(252, 245, 229, 1);
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 627px) {
   .modal {
