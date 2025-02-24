@@ -27,6 +27,7 @@
 .card__like-button_liked {
   background-image: url(../images/state-like.svg);
   opacity: 100%;
+  background-repeat: no-repeat;
 }
 .card__like-button_liked:hover {
   background-image: url(../images/state-like-hover.svg);
@@ -40,6 +41,7 @@
   background-image: url(../images/delete-icon.svg);
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .card__delete-button:hover {
   background-image: url(../images/delete-icon-hover.svg);

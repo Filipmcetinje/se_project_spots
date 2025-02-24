@@ -133,12 +133,19 @@
   .modal__submit-button {
     width: 100%;
   }
-  .modal__container_type_preview .modal__close-button {
-    top: 41px;
-    right: 16px;
+  .modal__image {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    display: block;
+    object-fit: contain;
   }
-
-  .modal__caption {
-    margin: 0;
+  .modal__container_type_preview {
+    width: 100%;
+    max-width: none;
+  }
+  .modal__container_type_preview .modal__close-button {
+    top: -36px;
+    right: 0;
   }
 }
