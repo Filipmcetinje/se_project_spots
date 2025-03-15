@@ -118,6 +118,10 @@ function handleAddCardSubmit(evt) {
 profileEditButton.addEventListener("click", () => {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
+  const inputList = Array.from(
+    profileFormElement.querySelectorAll(".modal__input")
+  );
+  resetValidation(profileFormElement, inputList, settings);
   openModal(editModal);
 });
 
