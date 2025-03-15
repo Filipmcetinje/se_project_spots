@@ -47,15 +47,6 @@ const resetValidation = (formElement, inputList, config) => {
   });
 };
 
-const modals = document.querySelectorAll(".modal");
-modals.forEach((modal) => {
-  modal.addEventListener("click", (evt) => {
-    if (evt.target.classList.contains("modal")) {
-      closeModal(modal);
-    }
-  });
-});
-
 const setEventListeners = (formElement, config) => {
   const inputList = Array.from(
     formElement.querySelectorAll(config.inputSelector)
@@ -74,7 +65,6 @@ const setEventListeners = (formElement, config) => {
 
     formElement.reset();
     toggleButtonState(formElement, inputList, buttonElement, config);
-    closeModal(formElement.closest(".modal"));
   });
 };
 
