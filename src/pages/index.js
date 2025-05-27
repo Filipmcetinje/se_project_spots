@@ -66,7 +66,7 @@ api
     profileAvatar.src = userData.avatar;
     cards.forEach((item) => {
       const cardElement = getCardElement(item);
-      cardsList.prepend(cardElement);
+      cardsList.append(cardElement);
     });
   })
   .catch((error) => {
@@ -115,10 +115,23 @@ function handleDeleteCard(cardElement, data) {
   openModal(deleteModal);
 }
 
+// const modals = document.querySelectorAll(".modal");
+// modals.forEach((modal) => {
+//   modal.addEventListener("click", (evt) => {
+//     if (evt.target.classList.contains("modal")) {
+//       closeModal(modal);
+//     }
+//   });
+// });
+
 const modals = document.querySelectorAll(".modal");
+
 modals.forEach((modal) => {
   modal.addEventListener("click", (evt) => {
-    if (evt.target.classList.contains("modal")) {
+    if (
+      evt.target.classList.contains("modal") ||
+      evt.target.closest(".modal__close-button")
+    ) {
       closeModal(modal);
     }
   });
@@ -139,6 +152,7 @@ function closeModal(modal) {
   modal.classList.remove("modal_opened");
   document.removeEventListener("keydown", handleEscape);
 }
+
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   const button = evt.submitter;
@@ -252,13 +266,19 @@ profileEditButton.addEventListener("click", () => {
   openModal(editModal);
 });
 
-const closeButtons = document.querySelectorAll(".modal__close-button");
+const deleteCancelButton = document.querySelector(".modal__cancel-button");
 
-closeButtons.forEach((button) => {
-  const modal = button.closest(".modal");
-
-  button.addEventListener("click", () => closeModal(modal));
+deleteCancelButton.addEventListener("click", () => {
+  closeModal(deleteModal);
 });
+
+// const closeButtons = document.querySelectorAll(".modal__close-button");
+
+// closeButtons.forEach((button) => {
+//   const modal = button.closest(".modal");
+
+//   button.addEventListener("click", () => closeModal(modal));
+// });
 
 //editModalCloseButton.addEventListener("click", () => {
 // closeModal(editModal);
